@@ -325,53 +325,7 @@ mac_kigou {
             >;
         };
 
-        win_left {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))   &kp UP_ARROW    &kp LC(TAB)        &trans                   &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END                  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT))  &trans          &kp LG(LS(RIGHT))  &trans                   &trans  &trans  &trans  &trans  &trans
-&trans          &trans            &trans          &trans             &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans            &trans          &trans             &trans   &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans            &trans                                                                      &trans  &trans  &trans
-&trans          &trans            &trans          &trans             &trans                   &trans  &trans  &trans  &trans
-            >;
-        };
 
-        buletooth {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
-        &trans  &trans  &trans  &trans  &trans  &trans       &trans        &trans        &trans        &trans
-&trans  &trans  &trans                                                                   &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans        &trans        &trans
-            >;
-        };
-
-        mac_Mouse {
-            bindings = <
-&kp LG(LC(LA(M)))  &kp LG(LA(LC(LEFT)))  &kp LC(LG(UP_ARROW))  &kp LA(LC(LG(UP_ARROW)))  &kp LG(BACKSLASH)                  &trans  &kp LG(LEFT_BRACKET)  &trans    &kp LG(RIGHT_BRACKET)  &trans
-&kp LC(UP_ARROW)   &kp LG(LC(LEFT))      &kp LG(LC(DOWN))      &kp LG(LC(RIGHT))         &kp LG(RC(RS(D)))                  &trans  &mkp MB1              &mkp MB3  &mkp MB2               &trans
-&kp LC(DOWN)       &kp LC(LG(LA(DOWN)))  &trans                &kp LC(LG(LA(RIGHT)))     &trans                             &trans  &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
-&trans             &trans                &trans                &trans                    &trans             &trans  &trans  &trans  &trans                &trans    &trans                 &trans
-                   &trans                &trans                &trans                    &trans             &trans  &trans  &trans  &trans                &trans    &trans
-&trans             &trans                &trans                                                                                                           &trans    &trans                 &trans
-&trans             &trans                &trans                &trans                    &trans                             &trans  &trans                &trans    &trans                 &trans
-            >;
-        };
-
-        win_MOUSE {
-            bindings = <
-&kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LC(W)         &kp LC(T)          &kp LS(LC(T))                  &none   &kp LA(LEFT)     &none     &kp LA(RIGHT)  &none
-&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &none                          &none   &mkp MB1         &mkp MB3  &mkp MB2       &none
-&none         &none             &none             &none              &none                          &none   &kp LC(LS(TAB))  &none     &kp LC(TAB)    &none
-&trans        &trans            &trans            &trans             &trans         &trans  &trans  &trans  &trans           &trans    &trans         &trans
-              &kp C_MUTE        &trans            &trans             &trans         &trans  &trans  &trans  &trans           &trans    &trans
-&trans        &trans            &trans                                                                                       &trans    &trans         &trans
-&trans        &trans            &trans            &trans             &trans                         &trans  &trans           &trans    &trans         &trans
-            >;
-        };
 
 
 
