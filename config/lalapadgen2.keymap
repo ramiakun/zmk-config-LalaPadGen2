@@ -349,7 +349,56 @@ mac_kigou {
             >;
         };
 
+//macmaouse
+//winmouse
 
+        SCROLL {
+            bindings = <
+&trans          &trans          &trans          &kp LEFT_BRACE  &kp LEFT_BRACKET                      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans   &trans   &trans
+&caccoZenkaku1  &caccoZenkaku4  &caccoZenkaku3  &caccoZenkaku2  &kp LEFT_PARENTHESIS                  &kp RIGHT_PARENTHESIS  &cacco2          &cacco3  &cacco4  &cacco1
+&trans          &trans          &trans          &trans          &kp LESS_THAN                         &kp GREATER_THAN       &trans           &trans   &trans   &trans
+&trans          &trans          &trans          &trans          &trans                &trans  &trans  &trans                 &trans           &trans   &trans   &trans
+                &trans          &trans          &trans          &trans                &trans  &trans  &trans                 &trans           &trans   &trans
+&trans          &trans          &trans                                                                                                        &trans   &trans   &trans
+&trans          &trans          &trans          &trans          &trans                                &trans                 &trans           &trans   &trans   &trans
+            >;
+        };
+
+        NumberFunction_jp {
+            bindings = <
+&kp F1   &kp F2   &kp F3   &kp F4             &kp F5                            &kp MINUS      &kp N7        &kp N8        &kp N9        &kp RS(SEMICOLON)
+&kp F6   &kp F7   &kp F8   &kp F9             &kp F10                           &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RS(SINGLE_QUOTE)
+&kp F11  &kp F12  &kp F13  &kp F14            &kp F15                           &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans   &trans   &trans   &trans             &trans   &trans           &trans  &trans         &trans        &trans        &trans        &kp PERIOD
+         &trans   &trans   &kp C_VOLUME_DOWN  &trans   &kp C_VOLUME_UP  &trans  &trans         &trans        &trans        &trans
+&trans   &trans   &trans                                                                                     &trans        &trans        &trans
+&trans   &trans   &trans   &trans             &trans                            &trans         &trans        &trans        &trans        &trans
+            >;
+        };
+
+        win_jp_kigou {
+            bindings = <
+&kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH   &kp DOLLAR            &kp PERCENT                                 &kp ESC        &kp HOME       &kp UP_ARROW    &kp END        &kp PRINTSCREEN
+&kp TAB          &kp EQUAL         &kp CARET  &kp RS(SINGLE_QUOTE)  &mkp LCLK                                   &kp BACKSPACE  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &kp F2
+&kp LSHIFT       &jp_underbar      &jp_pipe   &jp_en                &mt SEMICOLON SINGLE_QUOTE                  &kp DELETE     &kp PAGE_UP    &kp INS         &kp PAGE_DOWN  &kp RIGHT_ALT
+&kp RCTRL        &kp LEFT_WIN      &trans     &trans                &trans                      &trans  &trans  &kp RETURN     &kp RIGHT_ALT  &trans          &trans         &trans
+                 &trans            &trans     &trans                &trans                      &trans  &trans  &trans         &trans         &trans          &trans
+&trans           &trans            &trans                                                                                                     &trans          &trans         &trans
+&trans           &trans            &trans     &trans                &trans                                      &trans         &trans         &trans          &trans         &trans
+            >;
+        };
+
+        windows_jp_kakko {
+            bindings = <
+&trans            &trans            &trans            &kp RBRC          &kp RIGHT_BRACKET                  &kp BACKSLASH         &kp LS(BACKSLASH)  &trans            &trans            &trans
+&cacco1JpHankaku  &cacco4JpHankaku  &cacco3JpHankaku  &cacco2JpHankaku  &kp ASTERISK                       &kp LEFT_PARENTHESIS  &cacco2JpZenkaku   &cacco3JpZenkaku  &cacco4JpZenkaku  &cacco1JpZenkaku
+&trans            &trans            &trans            &trans            &kp LESS_THAN                      &kp GREATER_THAN      &trans             &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans             &trans  &trans  &trans                &trans             &trans            &trans            &trans
+                  &trans            &trans            &trans            &trans             &trans  &trans  &trans                &trans             &trans            &trans
+&trans            &trans            &trans                                                                                                          &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans                             &trans                &trans             &trans            &trans            &trans
+            >;
+        };
 
 
     };
