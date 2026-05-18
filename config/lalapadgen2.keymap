@@ -1,9 +1,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/zip_dynamic_scale.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
@@ -65,61 +63,58 @@
         mac_default {
             display-name = "Default";
             bindings = <
-&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                             &kp Y             &kp U            &kp I           &kp O            &kp P
-&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                       &mt RCTRL H       &mt RIGHT_WIN J  &mt RSHIFT K    &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
-&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                             &kp N             &kp M            &kp COMMA       &kp PERIOD       &kp SLASH
-&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &lt 10 BACKSPACE  &lt 4 LANGUAGE_1  &mo 2            &kp LANGUAGE_2  &kp LANGUAGE_1   &kp RIGHT_GUI
-                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &kp UP            &kp LEFT          &kp DOWN         &kp RIGHT       &none
-&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                          &mkp LCLK       &mkp RCLK        &mkp MCLK
-&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                         &mkp MB4          &mkp MB5         &kp LG(TAB)     &kp LG(D)        &kp LCTRL
+&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                          &kp Y              &kp U            &kp I         &kp O            &kp P
+&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N              &kp M            &kp COMMA     &kp PERIOD       &kp SLASH
+&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &kp BACKSPACE  &lt 10 LANGUAGE_1  &lt 4 EQUAL      &to 3         &to 1            &kp RIGHT_GUI
+                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &kp UP         &kp LEFT           &kp DOWN         &kp RIGHT     &lt 9 EQUAL
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                        &mkp LCLK     &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4           &mkp MB5         &kp LG(TAB)   &kp LG(D)        &kp LCTRL
             >;
         };
 
-        SECONDARY_LAYER {
+        Windows_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                             &kp Y             &kp U            &kp I           &kp O            &kp P
-&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                       &mt RCTRL H       &mt RIGHT_WIN J  &mt RSHIFT K    &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
-&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                             &kp N             &kp M            &kp COMMA       &kp PERIOD       &kp SLASH
-&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &lt 10 BACKSPACE  &lt 4 LANGUAGE_1  &mo 2            &kp LANGUAGE_2  &kp LANGUAGE_1   &kp RIGHT_GUI
-                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &kp UP            &kp LEFT          &kp DOWN         &kp RIGHT       &none
-&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                          &mkp LCLK       &mkp RCLK        &mkp MCLK
-&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                         &mkp MB4          &mkp MB5         &kp LG(TAB)     &kp LG(D)        &kp LCTRL
+&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                          &kp Y         &kp U            &kp I         &kp O            &kp P
+&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H   &mt RIGHT_WIN J  &mt RSHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N         &kp M            &kp COMMA     &kp PERIOD       &kp SLASH
+&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 12 SPACE  &kp BACKSPACE  &lt 11 LANG1  &lt 4 EQUAL      &to 2         &to 0            &kp LCTRL
+                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &kp UP         &kp LEFT      &kp DOWN         &kp RIGHT     &none
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                   &mkp LCLK     &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4      &mkp MB5         &kp LG(TAB)   &kp LG(D)        &kp LCTRL
             >;
         };
 
-
-        TERTIARY_LAYER {
+        Windows_JpKb {
             display-name = "tertiary_layer";
             bindings = <
-&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                             &kp Y             &kp U            &kp I           &kp O            &kp P
-&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                       &mt RCTRL H       &mt RIGHT_WIN J  &mt RSHIFT K    &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
-&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                             &kp N             &kp M            &kp COMMA       &kp PERIOD       &kp SLASH
-&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &lt 10 BACKSPACE  &lt 4 LANGUAGE_1  &mo 2            &kp LANGUAGE_2  &kp LANGUAGE_1   &kp RIGHT_GUI
-                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &kp UP            &kp LEFT          &kp DOWN         &kp RIGHT       &none
-&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                          &mkp LCLK       &mkp RCLK        &mkp MCLK
-&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                         &mkp MB4          &mkp MB5         &kp LG(TAB)     &kp LG(D)        &kp LCTRL
+&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                           &kp Y              &kp U            &kp I         &kp O            &kp P
+&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                     &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON AMPERSAND
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                           &kp N              &kp M            &kp COMMA     &kp PERIOD       &kp SLASH
+&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 14 LANGUAGE_2  &lt 15 SPACE  &kp BACKSPACE  &lt 11 LANGUAGE_1  &lt 13 EQUAL     &to 1         &to 2            &kp RCTRL
+                   &none           &kp RIGHT     &kp DOWN        &kp LEFT           &kp UP        &kp UP         &kp LEFT           &kp DOWN         &kp RIGHT     &none
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                         &mkp LCLK     &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                       &mkp MB4           &mkp MB5         &kp LG(TAB)   &kp LG(D)        &kp LCTRL
             >;
         };
 
-
-        SYSTEM_LAYER {
+        Mac_ONISHI {
             display-name = "system_layer";
             bindings = <
-&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                             &kp Y             &kp U            &kp I           &kp O            &kp P
-&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                       &mt RCTRL H       &mt RIGHT_WIN J  &mt RSHIFT K    &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
-&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                             &kp N             &kp M            &kp COMMA       &kp PERIOD       &kp SLASH
-&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &lt 10 BACKSPACE  &lt 4 LANGUAGE_1  &mo 2            &kp LANGUAGE_2  &kp LANGUAGE_1   &kp RIGHT_GUI
-                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &kp UP            &kp LEFT          &kp DOWN         &kp RIGHT       &none
-&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                          &mkp LCLK       &mkp RCLK        &mkp MCLK
-&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                         &mkp MB4          &mkp MB5         &kp LG(TAB)     &kp LG(D)        &kp LCTRL
+&mt CAPS Q         &kp L           &kp E         &mt PERIOD COMMA  &mt SEMICOLON SQT                               &kp F              &kp R            &kp W         &kp Y            &kp P
+&mt TAB A          &mt LEFT_ALT I  &mt LSHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                                 &mt RCTRL K        &mt RIGHT_WIN T  &mt RSHIFT N  &mt RIGHT_ALT S  &kp H
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V             &kp SLASH                                       &kp G              &kp D            &kp M         &kp J            &kp B
+&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS       &lt 5 LANGUAGE_2   &lt 12 SPACE  &kp BACKSPACE  &lt 10 LANGUAGE_1  &lt 4 EQUAL      &to 0         &to 1            &kp RIGHT_GUI
+                   &none           &kp RIGHT     &kp DOWN          &kp LEFT           &kp UP        &kp UP         &kp LEFT           &kp DOWN         &kp RIGHT     &none
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                           &mkp LCLK     &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                       &mkp MB4           &mkp MB5         &kp LG(TAB)   &kp LG(D)        &kp LCTRL
             >;
         };
-
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp F1  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
