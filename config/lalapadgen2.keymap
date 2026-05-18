@@ -3,7 +3,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
@@ -231,7 +230,7 @@
 &mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                          &kp Y              &kp U            &kp I            &kp O            &kp P
 &mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N              &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
-&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &kp BACKSPACE  &lt 10 LANGUAGE_1  &lt 4 EQUAL      &to 3            &to 1            &kp RIGHT_GUI
+&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 14 SPACE  &kp BACKSPACE  &lt 12 LANGUAGE_1  &lt 4 EQUAL      &to 3            &to 1            &kp RIGHT_GUI
                    &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                        &mkp LCLK        &mkp RCLK        &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
@@ -244,7 +243,7 @@
 &mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                          &kp Y           &kp U            &kp I            &kp O            &kp P
 &mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H     &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N           &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
-&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 12 SPACE  &kp BACKSPACE  &lt 11 LANG1    &lt 4 EQUAL      &to 2            &to 0            &kp LCTRL
+&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 14 SPACE  &kp BACKSPACE  &lt 13 LANG1    &lt 4 EQUAL      &to 2            &to 0            &kp LCTRL
                    &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                     &mkp LCLK        &mkp RCLK        &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4        &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
@@ -257,7 +256,7 @@
 &mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                           &kp Y              &kp U            &kp I            &kp O            &kp P
 &mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                     &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON AMPERSAND
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                           &kp N              &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
-&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 14 LANGUAGE_2  &lt 15 SPACE  &kp BACKSPACE  &lt 11 LANGUAGE_1  &lt 13 EQUAL     &to 1            &to 2            &kp RCTRL
+&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 11 LANGUAGE_2  &lt 10 SPACE  &kp BACKSPACE  &lt 13 LANGUAGE_1  &lt 15 EQUAL     &to 1            &to 2            &kp RCTRL
                    &none           &kp RIGHT     &kp DOWN        &kp LEFT           &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                         &mkp LCLK        &mkp RCLK        &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                       &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
@@ -266,11 +265,11 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-bindings = <
+            bindings = <
 &mt CAPS Q         &kp L           &kp E         &mt PERIOD COMMA  &mt SEMICOLON SQT                               &kp F              &kp R            &kp W            &kp Y            &kp P
 &mt TAB A          &mt LEFT_ALT I  &mt LSHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                                 &mt RCTRL K        &mt RIGHT_WIN T  &mt RSHIFT N     &mt RIGHT_ALT S  &kp H
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V             &kp SLASH                                       &kp G              &kp D            &kp M            &kp J            &kp B
-&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS       &lt 5 LANGUAGE_2   &lt 12 SPACE  &kp BACKSPACE  &lt 10 LANGUAGE_1  &lt 4 EQUAL      &to 0            &to 1            &kp RIGHT_GUI
+&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS       &lt 5 LANGUAGE_2   &lt 14 SPACE  &kp BACKSPACE  &lt 12 LANGUAGE_1  &lt 4 EQUAL      &to 0            &to 1            &kp RIGHT_GUI
                    &none           &kp RIGHT     &kp DOWN          &kp LEFT           &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                           &mkp LCLK        &mkp RCLK        &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                       &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
@@ -289,7 +288,7 @@ bindings = <
             >;
         };
 
-mac_kigou {
+        mac_kigou {
             bindings = <
 &mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                    &kp ESCAPE     &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)  &kp LC(LS(LG(NUMBER_4)))
 &kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                      &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT      &kp LC(U)
@@ -349,8 +348,29 @@ mac_kigou {
             >;
         };
 
-//macmaouse
-//winmouse
+        layer_15 {
+            bindings = <
+&kp LG(LC(LA(M)))  &kp LG(LA(LC(LEFT)))  &trans  &trans  &trans                  &trans  &kp LG(LEFT_BRACKET)  &trans    &kp LG(RIGHT_BRACKET)  &trans
+&trans             &trans                &trans  &trans  &trans                  &trans  &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&trans             &trans                &trans  &trans  &trans                  &trans  &kp LC(LS(TAB))       &trans    &kp RC(TAB)            &trans
+&trans             &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans    &trans                 &trans
+                   &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans    &trans
+&trans             &trans                &trans                                                                &trans    &trans                 &trans
+&trans             &trans                &trans  &trans  &trans                  &trans  &trans                &trans    &trans                 &trans
+            >;
+        };
+
+        layer_14 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                                                  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
 
         SCROLL {
             bindings = <
@@ -399,8 +419,6 @@ mac_kigou {
 &trans            &trans            &trans            &trans            &trans                             &trans                &trans             &trans            &trans            &trans
             >;
         };
-
-
     };
 
     conditional_layers {
