@@ -126,9 +126,9 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                 &kp ESCAPE     &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)  &kp LC(LS(LG(NUMBER_4)))
+&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                   &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT      &kp LC(U)
+&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                                                  &trans  &trans  &trans
