@@ -362,8 +362,8 @@
 
         win_mouce {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LC(W)  &kp LC(T)  &kp LS(LC(T))                  &trans  &trans  &trans  &trans  &trans
+&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
