@@ -348,29 +348,6 @@
             >;
         };
 
-        genin {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &kp LC(LS(TAB))  &trans  &kp RC(TAB)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans       &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans
-&trans  &trans  &trans                                                           &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans  &trans       &trans
-            >;
-        };
-
-        layer_14 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                                                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
 
         SCROLL {
             bindings = <
