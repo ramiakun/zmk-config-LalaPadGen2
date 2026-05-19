@@ -3,7 +3,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
@@ -228,52 +227,173 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W      &kp E         &kp R      &kp T                                     &kp Y      &kp U     &kp I           &kp O           &kp P
-&kp A              &kp S      &kp D         &kp F      &kp G                                     &kp H      &kp J     &kp K           &kp L           &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B                                     &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
-&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &mo 1      &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &mo 2     &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSLASH
-                   &none      &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP          &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &none
-&mkp LCLK          &mkp RCLK  &mkp MCLK                                                                               &mkp LCLK       &mkp RCLK       &mkp MCLK
-&mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)  &kp LCTRL                                 &mkp MB4   &mkp MB5  &kp LG(TAB)     &kp LG(D)       &kp LCTRL
+&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                          &kp Y              &kp U            &kp I            &kp O            &kp P
+&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N              &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
+&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 14 SPACE  &kp BACKSPACE  &lt 12 LANGUAGE_1  &lt 4 EQUAL      &to 3            &to 1            &kp RIGHT_GUI
+                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                        &mkp LCLK        &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
             >;
         };
 
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
-&kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &trans            &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp F6            &kp F7             &kp F8        &kp F9        &kp F10                   &trans            &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
-&trans            &trans             &trans        &trans        &trans   &trans  &kp DEL  &trans            &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_DIVIDE
-                  &trans             &trans        &trans        &trans   &trans  &trans   &trans            &trans             &trans           &trans
-&trans            &trans             &trans                                                                                     &trans           &trans           &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans                    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
+&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                          &kp Y           &kp U            &kp I            &kp O            &kp P
+&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H     &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N           &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
+&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 14 SPACE  &kp BACKSPACE  &lt 13 LANG1    &lt 4 EQUAL      &to 2            &to 0            &kp LCTRL
+                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                     &mkp LCLK        &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4        &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
             >;
         };
 
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                            &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &kp PRINTSCREEN
-&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK
-&kp GRAVE        &kp SQT        &kp SEMI      &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &trans         &mkp MB4  &trans          &mkp MB5   &kp PAUSE_BREAK
-&trans           &trans         &trans        &trans                &trans                 &trans  &trans  &trans         &trans    &trans          &trans     &trans
-                 &trans         &trans        &trans                &trans                 &trans  &trans  &trans         &trans    &trans          &trans
-&trans           &trans         &trans                                                                                              &trans          &trans     &trans
-&trans           &trans         &trans        &trans                &trans                                 &trans         &trans    &trans          &trans     &trans
+&mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                           &kp Y              &kp U            &kp I            &kp O            &kp P
+&mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                     &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON AMPERSAND
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                           &kp N              &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
+&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 11 LANGUAGE_2  &lt 10 SPACE  &kp BACKSPACE  &lt 13 LANGUAGE_1  &lt 15 EQUAL     &to 1            &to 2            &kp RCTRL
+                   &none           &kp RIGHT     &kp DOWN        &kp LEFT           &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                         &mkp LCLK        &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                       &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
             >;
         };
 
         SYSTEM_LAYER {
             display-name = "system_layer";
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
-&trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
-         &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
-&trans   &trans   &trans                                                                                                   &trans                         &trans                         &trans
-&trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
+&mt CAPS Q         &kp L           &kp E         &mt PERIOD COMMA  &mt SEMICOLON SQT                               &kp F              &kp R            &kp W            &kp Y            &kp P
+&mt TAB A          &mt LEFT_ALT I  &mt LSHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                                 &mt RCTRL K        &mt RIGHT_WIN T  &mt RSHIFT N     &mt RIGHT_ALT S  &kp H
+&mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V             &kp SLASH                                       &kp G              &kp D            &kp M            &kp J            &kp B
+&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS       &lt 5 LANGUAGE_2   &lt 14 SPACE  &kp BACKSPACE  &lt 12 LANGUAGE_1  &lt 4 EQUAL      &to 0            &to 1            &kp RIGHT_GUI
+                   &none           &kp RIGHT     &kp DOWN          &kp LEFT           &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                           &mkp LCLK        &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                       &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
+            >;
+        };
+
+        Number_Function {
+            bindings = <
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PLUS
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &kp SLASH  &kp N4  &kp N5  &kp N6  &kp ASTERISK
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N0
+&trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans     &trans  &trans  &trans  &kp DOT
+         &trans   &trans   &trans   &trans   &trans  &trans  &trans     &trans  &trans  &trans
+&trans   &trans   &trans                                                        &trans  &trans  &trans
+&trans   &trans   &trans   &trans   &trans                   &trans     &trans  &trans  &trans  &trans
+            >;
+        };
+
+        mac_kigou {
+            bindings = <
+&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                    &kp ESCAPE     &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)  &kp LC(LS(LG(NUMBER_4)))
+&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                      &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT      &kp LC(U)
+&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON                  &kp DELETE     &kp LG(UP_ARROW)  &kp INS       &kp LG(DOWN)   &kp RIGHT_ALT
+&trans                  &trans              &trans                    &trans              &trans         &trans  &trans  &kp ENTER      &kp LEFT_ALT      &trans        &trans         &kp LS(LG(NUMBER_3))
+                        &kp C_MUTE          &trans                    &trans              &trans         &trans  &trans  &trans         &trans            &trans        &trans
+&trans                  &trans              &trans                                                                                                        &trans        &trans         &trans
+&trans                  &trans              &trans                    &trans              &trans                         &trans         &trans            &trans        &trans         &trans
+            >;
+        };
+
+        windows_kigou {
+            bindings = <
+&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                    &kp ESCAPE     &kp HOME        &kp UP_ARROW  &kp END        &kp PRINTSCREEN
+&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp F2
+&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON                  &kp DELETE     &kp PAGE_UP     &kp INS       &kp PAGE_DOWN  &kp RIGHT_ALT
+&trans                  &trans              &trans                    &trans              &trans         &trans  &trans  &trans         &trans          &trans        &trans         &trans
+                        &trans              &trans                    &trans              &trans         &trans  &trans  &trans         &trans          &trans        &trans
+&trans                  &trans              &trans                                                                                                      &trans        &trans         &trans
+&trans                  &trans              &trans                    &trans              &trans                         &trans         &trans          &trans        &trans         &trans
+            >;
+        };
+
+        mac_left {
+            bindings = <
+&trans  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT)      &trans                               &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT          &trans                               &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(UP_ARROW)    &trans        &kp LG(DOWN)       &kp C_MUTE                           &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans        &trans             &trans      &trans           &trans  &trans  &trans  &trans  &trans  &trans
+        &kp C_MUTE          &kp F15       &kp C_VOLUME_DOWN  &kp F14     &kp C_VOLUME_UP  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans                                                                                &trans  &trans  &trans
+&trans  &trans              &trans        &trans             &trans                               &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        win_left {
+            bindings = <
+&kp ESCAPE      &kp LC(LS(TAB))   &kp UP_ARROW    &kp LC(TAB)        &trans                   &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END                  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT))  &trans          &kp LG(LS(RIGHT))  &trans                   &trans  &trans  &trans  &trans  &trans
+&trans          &trans            &trans          &trans             &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans            &trans          &trans             &trans   &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans            &trans                                                                      &trans  &trans  &trans
+&trans          &trans            &trans          &trans             &trans                   &trans  &trans  &trans  &trans
+            >;
+        };
+
+        buletooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+        &trans  &trans  &trans  &trans  &trans  &trans       &trans        &trans        &trans        &trans
+&trans  &trans  &trans                                                                   &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans        &trans        &trans
+            >;
+        };
+
+
+        SCROLL {
+            bindings = <
+&trans          &trans          &trans          &kp LEFT_BRACE  &kp LEFT_BRACKET                      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans   &trans   &trans
+&caccoZenkaku1  &caccoZenkaku4  &caccoZenkaku3  &caccoZenkaku2  &kp LEFT_PARENTHESIS                  &kp RIGHT_PARENTHESIS  &cacco2          &cacco3  &cacco4  &cacco1
+&trans          &trans          &trans          &trans          &kp LESS_THAN                         &kp GREATER_THAN       &trans           &trans   &trans   &trans
+&trans          &trans          &trans          &trans          &trans                &trans  &trans  &trans                 &trans           &trans   &trans   &trans
+                &trans          &trans          &trans          &trans                &trans  &trans  &trans                 &trans           &trans   &trans
+&trans          &trans          &trans                                                                                                        &trans   &trans   &trans
+&trans          &trans          &trans          &trans          &trans                                &trans                 &trans           &trans   &trans   &trans
+            >;
+        };
+
+        NumberFunction_jp {
+            bindings = <
+&kp F1   &kp F2   &kp F3   &kp F4             &kp F5                            &kp MINUS      &kp N7        &kp N8        &kp N9        &kp RS(SEMICOLON)
+&kp F6   &kp F7   &kp F8   &kp F9             &kp F10                           &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RS(SINGLE_QUOTE)
+&kp F11  &kp F12  &kp F13  &kp F14            &kp F15                           &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans   &trans   &trans   &trans             &trans   &trans           &trans  &trans         &trans        &trans        &trans        &kp PERIOD
+         &trans   &trans   &kp C_VOLUME_DOWN  &trans   &kp C_VOLUME_UP  &trans  &trans         &trans        &trans        &trans
+&trans   &trans   &trans                                                                                     &trans        &trans        &trans
+&trans   &trans   &trans   &trans             &trans                            &trans         &trans        &trans        &trans        &trans
+            >;
+        };
+
+        win_jp_kigou {
+            bindings = <
+&kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH   &kp DOLLAR            &kp PERCENT                                 &kp ESC        &kp HOME       &kp UP_ARROW    &kp END        &kp PRINTSCREEN
+&kp TAB          &kp EQUAL         &kp CARET  &kp RS(SINGLE_QUOTE)  &mkp LCLK                                   &kp BACKSPACE  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &kp F2
+&kp LSHIFT       &jp_underbar      &jp_pipe   &jp_en                &mt SEMICOLON SINGLE_QUOTE                  &kp DELETE     &kp PAGE_UP    &kp INS         &kp PAGE_DOWN  &kp RIGHT_ALT
+&kp RCTRL        &kp LEFT_WIN      &trans     &trans                &trans                      &trans  &trans  &kp RETURN     &kp RIGHT_ALT  &trans          &trans         &trans
+                 &trans            &trans     &trans                &trans                      &trans  &trans  &trans         &trans         &trans          &trans
+&trans           &trans            &trans                                                                                                     &trans          &trans         &trans
+&trans           &trans            &trans     &trans                &trans                                      &trans         &trans         &trans          &trans         &trans
+            >;
+        };
+
+        windows_jp_kakko {
+            bindings = <
+&trans            &trans            &trans            &kp RBRC          &kp RIGHT_BRACKET                  &kp BACKSLASH         &kp LS(BACKSLASH)  &trans            &trans            &trans
+&cacco1JpHankaku  &cacco4JpHankaku  &cacco3JpHankaku  &cacco2JpHankaku  &kp ASTERISK                       &kp LEFT_PARENTHESIS  &cacco2JpZenkaku   &cacco3JpZenkaku  &cacco4JpZenkaku  &cacco1JpZenkaku
+&trans            &trans            &trans            &trans            &kp LESS_THAN                      &kp GREATER_THAN      &trans             &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans             &trans  &trans  &trans                &trans             &trans            &trans            &trans
+                  &trans            &trans            &trans            &trans             &trans  &trans  &trans                &trans             &trans            &trans
+&trans            &trans            &trans                                                                                                          &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans                             &trans                &trans             &trans            &trans            &trans
             >;
         };
     };
