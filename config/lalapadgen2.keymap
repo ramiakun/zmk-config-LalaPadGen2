@@ -278,13 +278,13 @@
 
         Number_Function {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PLUS
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &kp SLASH  &kp N4  &kp N5  &kp N6  &kp ASTERISK
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N0
-&trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans     &trans  &trans  &trans  &kp DOT
-         &trans   &trans   &trans   &trans   &trans  &trans  &trans     &trans  &trans  &trans
-&trans   &trans   &trans                                                        &trans  &trans  &trans
-&trans   &trans   &trans   &trans   &trans                   &trans     &trans  &trans  &trans  &trans
+&kp F1   &kp F2      &kp F3   &kp F4             &kp F5                            &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PLUS
+&kp F6   &kp F7      &kp F8   &kp F9             &kp F10                           &kp SLASH  &kp N4  &kp N5  &kp N6  &kp ASTERISK
+&kp F11  &kp F12     &kp F13  &kp F14            &kp F15                           &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N0
+&trans   &trans      &trans   &trans             &trans   &trans           &trans  &trans     &trans  &trans  &trans  &kp DOT
+         &kp C_MUTE  &kp F15  &kp C_VOLUME_DOWN  &kp F14  &kp C_VOLUME_UP  &trans  &trans     &trans  &trans  &trans
+&trans   &trans      &trans                                                                           &trans  &trans  &trans
+&trans   &trans      &trans   &trans             &trans                            &trans     &trans  &trans  &trans  &trans
             >;
         };
 
@@ -386,13 +386,13 @@
 
         NumberFunction_jp {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4             &kp F5                            &kp MINUS      &kp N7        &kp N8        &kp N9        &kp RS(SEMICOLON)
-&kp F6   &kp F7   &kp F8   &kp F9             &kp F10                           &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RS(SINGLE_QUOTE)
-&kp F11  &kp F12  &kp F13  &kp F14            &kp F15                           &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&trans   &trans   &trans   &trans             &trans   &trans           &trans  &trans         &trans        &trans        &trans        &kp PERIOD
-         &trans   &trans   &kp C_VOLUME_DOWN  &trans   &kp C_VOLUME_UP  &trans  &trans         &trans        &trans        &trans
-&trans   &trans   &trans                                                                                     &trans        &trans        &trans
-&trans   &trans   &trans   &trans             &trans                            &trans         &trans        &trans        &trans        &trans
+&kp F1   &kp F2      &kp F3   &kp F4             &kp F5                            &kp MINUS      &kp N7        &kp N8        &kp N9        &kp RS(SEMICOLON)
+&kp F6   &kp F7      &kp F8   &kp F9             &kp F10                           &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RS(SINGLE_QUOTE)
+&kp F11  &kp F12     &kp F13  &kp F14            &kp F15                           &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans   &trans      &trans   &trans             &trans   &trans           &trans  &trans         &trans        &trans        &trans        &kp PERIOD
+         &kp C_MUTE  &kp F15  &kp C_VOLUME_DOWN  &kp F14  &kp C_VOLUME_UP  &trans  &trans         &trans        &trans        &trans
+&trans   &trans      &trans                                                                                     &trans        &trans        &trans
+&trans   &trans      &trans   &trans             &trans                            &trans         &trans        &trans        &trans        &trans
             >;
         };
 
