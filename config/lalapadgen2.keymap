@@ -348,35 +348,11 @@
             >;
         };
 
-    mac_mouse {
-            bindings = <
-&kp LG(LC(LA(M)))  &kp LG(LA(LC(LEFT_ARROW)))  &kp LG(LC(UP_ARROW))    &kp LG(LA(LC(UP_ARROW)))  &kp LG(NON_US_BACKSLASH)                  &trans  &kp LG(LEFT_BRACKET)  &trans     &kp LG(RIGHT_BRACKET)  &trans
-&kp LC(UP)         &kp LG(LC(LEFT))            &kp LG(LC(DOWN_ARROW))  &kp LG(LC(RIGHT))         &kp LG(LS(LC(D)))                         &trans  &mkp LCLK             &mkp MCLK  &mkp RCLK              &trans
-&kp LC(DOWN)       &kp LG(LC(LA(DOWN_ARROW)))  &trans                  &kp LC(LA(LG(RIGHT)))     &trans                                    &trans  &kp LC(LS(TAB))       &trans     &kp LC(TAB)            &trans
-&trans             &trans                      &trans                  &trans                    &trans                    &trans  &trans  &trans  &trans                &trans     &trans                 &trans
-                   &trans                      &trans                  &trans                    &trans                    &trans  &trans  &trans  &trans                &trans     &trans
-&trans             &trans                      &trans                                                                                                                    &trans     &trans                 &trans
-&trans             &trans                      &trans                  &trans                    &trans                                    &trans  &trans                &trans     &trans                 &trans
-            >;
-        };
-
-        win_mouce {
-            bindings = <
-&kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LC(W)         &kp LC(T)          &kp LS(LC(T))                  &trans  &kp LA(LEFT)     &trans    &kp LA(RIGHT)  &trans
-&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &trans                         &trans  &mkp MB1         &mkp MB3  &mkp MB2       &trans
-&trans        &trans            &trans            &trans             &trans                         &trans  &kp LC(LS(TAB))  &trans    &kp LC(TAB)    &trans
-&trans        &trans            &trans            &trans             &trans         &trans  &trans  &trans  &trans           &trans    &trans         &trans
-              &kp C_MUTE        &trans            &trans             &trans         &trans  &trans  &trans  &trans           &trans    &trans
-&trans        &trans            &trans                                                                                       &trans    &trans         &trans
-&trans        &trans            &trans            &trans             &trans                         &trans  &trans           &trans    &trans         &trans
-            >;
-        };
-
         mac_mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp LG(LC(LA(M)))  &kp LG(LA(LC(LEFT_ARROW)))  &kp LG(LC(UP_ARROW))    &kp LG(LA(LC(UP_ARROW)))  &kp LG(NON_US_BACKSLASH)                  &trans  &kp LG(LEFT_BRACKET)  &trans     &kp LG(RIGHT_BRACKET)  &trans
+&kp LC(UP)         &kp LG(LC(LEFT))            &kp LG(LC(DOWN_ARROW))  &kp LG(LC(RIGHT))         &kp LG(LS(LC(D)))                   &trans  &mkp LCLK             &mkp MCLK  &mkp RCLK              &trans
+&kp LC(DOWN)       &kp LG(LC(LA(DOWN_ARROW)))  &trans                  &kp LC(LA(LG(RIGHT)))     &trans                  &trans  &kp LC(LS(TAB))       &trans     &kp LC(TAB)            &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                                                  &trans  &trans  &trans
