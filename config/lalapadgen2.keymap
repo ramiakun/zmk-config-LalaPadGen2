@@ -230,7 +230,7 @@
 &mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                          &kp Y              &kp U            &kp I            &kp O            &kp P
 &mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N              &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
-&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 11 SPACE  &kp BACKSPACE  &lt 11 LANGUAGE_1  &lt 4 EQUAL      &to 3            &to 1            &kp RIGHT_GUI
+&kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &kp BACKSPACE  &lt 10 LANGUAGE_1  &lt 4 EQUAL      &to 3            &to 1            &kp RIGHT_GUI
                    &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                        &mkp LCLK        &mkp RCLK        &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
@@ -256,7 +256,7 @@
 &mt CAPS Q         &kp W           &kp E         &kp R           &kp T                                           &kp Y              &kp U            &kp I            &kp O            &kp P
 &mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                     &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON AMPERSAND
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                           &kp N              &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
-&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 13 LANGUAGE_2  &lt 15 SPACE  &kp BACKSPACE  &lt 11 LANGUAGE_1  &lt 10 EQUAL     &to 1            &to 2            &kp RCTRL
+&kp LCTRL          &kp LEFT_WIN    &kp LEFT_ALT  &lt 8 MINUS     &lt 14 LANGUAGE_2  &lt 15 SPACE  &kp BACKSPACE  &lt 11 LANGUAGE_1  &lt 13 EQUAL     &to 1            &to 3            &kp RCTRL
                    &none           &kp RIGHT     &kp DOWN        &kp LEFT           &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                         &mkp LCLK        &mkp RCLK        &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                       &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
@@ -351,24 +351,24 @@
         mac_mouse {
             bindings = <
 &kp LG(LC(LA(M)))  &kp LG(LA(LC(LEFT_ARROW)))  &kp LG(LC(UP_ARROW))    &kp LG(LA(LC(UP_ARROW)))  &kp LG(NON_US_BACKSLASH)                  &trans  &kp LG(LEFT_BRACKET)  &trans     &kp LG(RIGHT_BRACKET)  &trans
-&kp LC(UP)         &kp LG(LC(LEFT))            &kp LG(LC(DOWN_ARROW))  &kp LG(LC(RIGHT))         &kp LG(LS(LC(D)))                   &trans  &mkp LCLK             &mkp MCLK  &mkp RCLK              &trans
-&kp LC(DOWN)       &kp LG(LC(LA(DOWN_ARROW)))  &trans                  &kp LC(LA(LG(RIGHT)))     &trans                  &trans  &kp LC(LS(TAB))       &trans     &kp LC(TAB)            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                                                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp LC(UP)         &kp LG(LC(LEFT))            &kp LG(LC(DOWN_ARROW))  &kp LG(LC(RIGHT))         &kp LG(LS(LC(D)))                         &trans  &mkp LCLK             &mkp MCLK  &mkp RCLK              &trans
+&kp LC(DOWN)       &kp LG(LC(LA(DOWN_ARROW)))  &trans                  &kp LC(LA(LG(RIGHT)))     &trans                                    &trans  &kp LC(LS(TAB))       &trans     &kp LC(TAB)            &trans
+&trans             &trans                      &trans                  &trans                    &trans                    &trans  &trans  &trans  &trans                &trans     &trans                 &trans
+                   &trans                      &trans                  &trans                    &trans                    &trans  &trans  &trans  &trans                &trans     &trans
+&trans             &trans                      &trans                                                                                                                    &trans     &trans                 &trans
+&trans             &trans                      &trans                  &trans                    &trans                                    &trans  &trans                &trans     &trans                 &trans
             >;
         };
 
         windows_mouse {
             bindings = <
 &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LC(W)         &kp LC(T)          &kp LS(LC(T))                  &trans  &kp LA(LEFT)     &trans    &kp LA(RIGHT)  &trans
-&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &trans                 &trans  &mkp MB1         &mkp MB3  &mkp MB2       &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &kp LC(LS(TAB))  &trans    &kp LC(TAB)    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                                                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &trans                         &trans  &mkp MB1         &mkp MB3  &mkp MB2       &trans
+&trans        &trans            &trans            &trans             &trans                         &trans  &kp LC(LS(TAB))  &trans    &kp LC(TAB)    &trans
+&trans        &trans            &trans            &trans             &trans         &trans  &trans  &trans  &trans           &trans    &trans         &trans
+              &trans            &trans            &trans             &trans         &trans  &trans  &trans  &trans           &trans    &trans
+&trans        &trans            &trans                                                                                       &trans    &trans         &trans
+&trans        &trans            &trans            &trans             &trans                         &trans  &trans           &trans    &trans         &trans
             >;
         };
 
