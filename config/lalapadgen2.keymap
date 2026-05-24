@@ -11,10 +11,19 @@
 #define SYSTEM_LAYER    3
 
 // &mt { quick-tap-ms = <200>; };
-&mt { quick-tap-ms = <20>; };
+
+&mt {
+    quick-tap-ms = <0>;
+    flavor = "balanced";
+};
 
 // &lt { quick-tap-ms = <200>; };
-&lt { quick-tap-ms = <20>; };
+
+&lt {
+    quick-tap-ms = <300>;
+    flavor = "balanced";
+};
+
 / {
     behaviors {
         zip_dyn_scale: zip_dyn_scale {
