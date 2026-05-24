@@ -50,6 +50,7 @@
         CONBO_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <12>;
         };
 
         COMBO_TAB {
