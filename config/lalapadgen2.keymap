@@ -302,13 +302,13 @@
 
         mac_kigou {
             bindings = <
-&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                    &kp ESCAPE     &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)  &kp LC(LS(LG(NUMBER_4)))
-&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                      &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT      &kp LC(U)
-&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON                  &kp DELETE     &kp LG(UP_ARROW)  &kp INS       &kp LG(DOWN)   &kp RIGHT_ALT
-&trans                  &trans              &trans                    &trans              &trans         &trans  &trans  &kp ENTER      &kp LEFT_ALT      &trans        &trans         &kp LS(LG(NUMBER_3))
-                        &kp C_MUTE          &trans                    &trans              &trans         &trans  &trans  &trans         &trans            &trans        &trans
-&trans                  &trans              &trans                                                                                                        &trans        &trans         &trans
-&trans                  &trans              &trans                    &trans              &trans                         &trans         &trans            &trans        &trans         &trans
+&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                       &kp ESCAPE     &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)  &kp LC(LS(LG(NUMBER_4)))
+&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                         &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT      &kp LC(U)
+&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON                     &kp DELETE     &kp LG(UP_ARROW)  &kp INS       &kp LG(DOWN)   &kp RIGHT_ALT
+&trans                  &trans              &trans                    &trans              &trans         &trans  &kp ENTER  &kp LEFT_ALT   &trans            &trans        &trans         &kp LS(LG(NUMBER_3))
+                        &kp C_MUTE          &trans                    &trans              &trans         &trans  &trans     &trans         &trans            &trans        &trans
+&trans                  &trans              &trans                                                                                                           &trans        &trans         &trans
+&trans                  &trans              &trans                    &trans              &trans                            &trans         &trans            &trans        &trans         &trans
             >;
         };
 
@@ -410,13 +410,13 @@
 
         win_jp_kigou {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH   &kp DOLLAR            &kp PERCENT                                 &kp ESC        &kp HOME       &kp UP_ARROW    &kp END        &kp PRINTSCREEN
-&kp TAB          &kp EQUAL         &kp CARET  &kp RS(SINGLE_QUOTE)  &mkp LCLK                                   &kp BACKSPACE  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &kp F2
-&kp LSHIFT       &jp_underbar      &jp_pipe   &jp_en                &mt SEMICOLON SINGLE_QUOTE                  &kp DELETE     &kp PAGE_UP    &kp INS         &kp PAGE_DOWN  &kp RIGHT_ALT
-&kp RCTRL        &kp LEFT_WIN      &trans     &trans                &trans                      &trans  &trans  &kp RETURN     &kp RIGHT_ALT  &trans          &trans         &trans
-                 &trans            &trans     &trans                &trans                      &trans  &trans  &trans         &trans         &trans          &trans
-&trans           &trans            &trans                                                                                                     &trans          &trans         &trans
-&trans           &trans            &trans     &trans                &trans                                      &trans         &trans         &trans          &trans         &trans
+&kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH   &kp DOLLAR            &kp PERCENT                                    &kp ESC        &kp HOME     &kp UP_ARROW    &kp END        &kp PRINTSCREEN
+&kp TAB          &kp EQUAL         &kp CARET  &kp RS(SINGLE_QUOTE)  &mkp LCLK                                      &kp BACKSPACE  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT      &kp F2
+&kp LSHIFT       &jp_underbar      &jp_pipe   &jp_en                &mt SEMICOLON SINGLE_QUOTE                     &kp DELETE     &kp PAGE_UP  &kp INS         &kp PAGE_DOWN  &kp RIGHT_ALT
+&kp RCTRL        &kp LEFT_WIN      &trans     &trans                &trans                      &trans  &kp ENTER  &kp LEFT_ALT   &trans       &trans          &trans         &trans
+                 &trans            &trans     &trans                &trans                      &trans  &trans     &trans         &trans       &trans          &trans
+&trans           &trans            &trans                                                                                                      &trans          &trans         &trans
+&trans           &trans            &trans     &trans                &trans                                         &trans         &trans       &trans          &trans         &trans
             >;
         };
 
