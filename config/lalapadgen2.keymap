@@ -231,7 +231,7 @@
 &mt TAB A          &mt LEFT_ALT S  &mt LSHIFT D  &mt LEFT_WIN F  &mt LCTRL G                                    &mt RCTRL H        &mt RIGHT_WIN J  &mt RSHIFT K     &mt RIGHT_ALT L  &mt SEMICOLON SINGLE_QUOTE
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B                                          &kp N              &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
 &kp LEFT_WIN       &kp LEFT_ALT    &kp LCTRL     &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE  &kp BACKSPACE  &lt 10 LANGUAGE_1  &lt 4 EQUAL      &to 3            &to 1            &kp RIGHT_GUI
-                   &none           &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
+                   &kp C_MUTE      &kp RIGHT     &kp DOWN        &kp LEFT          &kp UP        &mmv MOVE_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &lt 9 EQUAL
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                                                        &mkp LCLK        &mkp RCLK        &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                      &mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)        &kp LCTRL
             >;
