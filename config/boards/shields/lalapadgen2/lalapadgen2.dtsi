@@ -165,7 +165,7 @@
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
             // 遅スピードスクロール
-            layers = <1>,<2>;
+            layers = <12>,<15>;
             input-processors =  <&trackpad_key_behaviors_R>,
                                 <&zip_xy_scaler 1 15>,
                                 // 第二引数を序数 大きいほど遅くなる
@@ -185,7 +185,7 @@
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
             // 遅スピードスクロール
-            layers = <1>,<2>;
+            layers = <12>,<15>;
             input-processors =  <&trackpad_key_behaviors_L>,
                                 <&zip_xy_scaler 1 15>,
                                 // 第二引数を序数 大きいほど遅くなる
