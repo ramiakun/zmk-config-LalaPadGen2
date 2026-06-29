@@ -165,7 +165,7 @@
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
             // 遅スピードスクロール
-            layers = <0>,<2>;
+            layers = <12>,<15>;
             input-processors =  <&trackpad_key_behaviors_R>,
                                 //デフォルト<&zip_xy_scaler 1 15>,
                                 <&zip_xy_scaler 1 5>,
