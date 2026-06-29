@@ -169,7 +169,7 @@
             input-processors =  <&trackpad_key_behaviors_R>,
                                 <&zip_xy_scaler 1 15>,
                                // 第二引数が大きいほどスクロールスピードが小さくなる
-                                <&zip_scroll_scaler 1 500>,
+                                <&zip_scroll_scaler 1 400>,
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>;
         };
