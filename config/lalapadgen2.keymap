@@ -194,7 +194,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANGUAGE_1 &kp A &kp N>,
+                <&kp LANGUAGE_1 &kp L &kp A &kp I>,
                 <&macro_wait_time 1>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
@@ -208,7 +208,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANGUAGE_1 &kp P &kp A &kp I>,
+                <&kp LANGUAGE_1 &kp L &kp U &kp A>,
                 <&macro_wait_time 1>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
@@ -222,7 +222,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANG_HANGEUL &kp E &kp N>,
+                <&kp LANG_HANGEUL &kp L &kp E &kp A>,
                 <&macro_wait_time 1>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
