@@ -165,12 +165,12 @@
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
             // 遅スピードスクロール
-            layers = <12>,<15>;
+            layers = <0>,<2>;
             input-processors =  <&trackpad_key_behaviors_R>,
                                 //デフォルト<&zip_xy_scaler 1 15>,
                                 <&zip_xy_scaler 1 5>,
                                 // 第二引数を序数 大きいほど遅くなる
-                                <&zip_scroll_scaler 1 200>,
+                                <&zip_scroll_scaler 1 400>,
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>;
         };
@@ -186,11 +186,11 @@
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
             // 遅スピードスクロール
-            layers = <12>,<15>;
+            layers = <0>,<2>;
             input-processors =  <&trackpad_key_behaviors_L>,
                                 <&zip_xy_scaler 1 5>,
                                 // 第二引数を序数 大きいほど遅くなる
-                                <&zip_scroll_scaler 1 300>,
+                                <&zip_scroll_scaler 1 400>,
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>;
         };
